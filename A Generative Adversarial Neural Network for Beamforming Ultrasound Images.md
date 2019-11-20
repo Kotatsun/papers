@@ -36,7 +36,7 @@ A Generative Adversarial Neural Network for Beamforming Ultrasound Images: Invit
   - テストデータ2: CIRS 054GSファントムの円形断面を画像化し， シミュレーションでのテストデータとして用いた．
 
 - ネットワーク構造:
-  - ジェネレータ： U-net(backbone: VGG13+BatchNorm)でRF信号を入力とし， B-mode画像[出力1]とセグメンテーション画像[出力2]を出力する． 損失関数は出力1のL1誤差 + 出力2のDise係数 + ディスクリミネータのBinaryCrossEntropy×0.5．   
+  - ジェネレータ： U-net(backbone: VGG13+BatchNorm)でRF信号を入力とし， B-mode画像[出力1]とセグメンテーション画像[出力2]を出力する．   損失関数は出力1のL1誤差 + 出力2のDise係数 + ディスクリミネータのBinaryCrossEntropy×0.5．   
   - ディスクリミネータ： VGG13+BatchNormで２値分類を行う． 損失関数はRealとFakeのBinaryCrossEntropy．
 
 - テストデータの評価:
