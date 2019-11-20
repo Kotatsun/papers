@@ -19,7 +19,7 @@ A Generative Adversarial Neural Network for Beamforming Ultrasound Images: Invit
 ## 研究背景，先行研究に対する新規性
 - 複数の平面波音波照射を組み合わせ画質を向上させる従来の手法は，画像品質とフレームレートの間にトレードオフが存在する．
 
-- ビームフォーミングのパラメータ抽出や，ノイズ除去，音速分布の推定(?)にDNNを用いる先行研究とは異なる．
+- ビームフォーミングのパラメータ抽出や，ノイズ除去，音速分布の推定([1](https://ieeexplore.ieee.org/abstract/document/8772124))にDNNを用いる先行研究とは異なる．
 
 - ビームフォーミングを施していない単一平面波によるRaw RF信号からend-to-endで情報抽出が行われる．
 
