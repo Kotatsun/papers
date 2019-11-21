@@ -66,7 +66,8 @@ A Generative Adversarial Neural Network for Beamforming Ultrasound Images: Invit
 <br />
 
 ## 次に読むべき論文は
-- 先行研究のところで紹介していた他のDNN論文とか．個人的に気になるのは[12]のSound speed inversionのやつ．
+- 先行研究のところで紹介していた他のDNN論文とか．個人的に気になるのは[12]の[Sound speed inversionのやつ](https://arxiv.org/pdf/1810.00322.pdf)．
+
 
 
 [6]Arun Asokan Nair, Trac D Tran, Austin Reiter, and Muyinatu A Lediju
