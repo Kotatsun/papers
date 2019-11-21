@@ -68,6 +68,7 @@ A Generative Adversarial Neural Network for Beamforming Ultrasound Images: Invit
 ## 次に読むべき論文は
 - 先行研究のところで紹介していた他のDNN論文とか．個人的に気になるのは[12]のSound speed inversionのやつ．
 
+
 [6]Arun Asokan Nair, Trac D Tran, Austin Reiter, and Muyinatu A Lediju
 Bell, “A deep learning based alternative to beamforming ultrasound
 images,” in 2018 IEEE International Conference on Acoustics, Speech
