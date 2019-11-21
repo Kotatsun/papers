@@ -61,13 +61,56 @@ A Generative Adversarial Neural Network for Beamforming Ultrasound Images: Invit
 ## 議論はあるか
 - なんかRFから再構成画像へのend-to-endはできそうだよねという結論．
 
-- あとはどの程度複雑な構造をDNNは表現できるかとい問題だろうか．
+- 今回は円形の構造体しか扱っていないので，あとはどの程度複雑な構造をDNNは表現できるかという問題だろうか．
 
 <br />
 
 ## 次に読むべき論文は
 - 先行研究のところで紹介していた他のDNN論文とか．
 
+Arun Asokan Nair, Trac D Tran, Austin Reiter, and Muyinatu A Lediju
+Bell, “A deep learning based alternative to beamforming ultrasound
+images,” in 2018 IEEE International Conference on Acoustics, Speech
+and Signal Processing (ICASSP). IEEE, 2018, pp. 3359–3363.
 
+Arun Asokan Nair, Mardava Rajugopal Gubbi, Trac Duy Tran, Austin
+Reiter, and Muyinatu A Lediju Bell, “A fully convolutional neural network for beamforming ultrasound images,” in 2018 IEEE International
+Ultrasonics Symposium (IUS). IEEE, 2018, pp. 1–4
 
+Adam C Luchies and Brett C Byram, “Deep neural networks for
+ultrasound beamforming,” IEEE transactions on medical imaging, vol.
+37, no. 9, pp. 2010–2021, 2018.
 
+Adam C Luchies and Brett C Byram, “Training improvements for ultrasound beamforming with deep neural networks,” Physics in medicine
+and biology, 2019.
+
+Sanketh Vedula, Ortal Senouf, Grigoriy Zurakhov, Alex Bronstein, Oleg
+Michailovich, and Michael Zibulevsky, “Learning beamforming in
+ultrasound imaging,” arXiv preprint arXiv:1812.08043, 2018.
+
+Maxime Gasse, Fabien Millioz, Emmanuel Roux, Damien Garcia, Herve´
+Liebgott, and Denis Friboulet, “High-quality plane wave compounding
+using convolutional neural networks,” IEEE transactions on ultrasonics,
+ferroelectrics, and frequency control, vol. 64, no. 10, pp. 1637–1639,
+2017.
+
+Micha Feigin, Daniel Freedman, and Brian W Anthony, “A deep
+learning framework for single sided sound speed inversion in medical
+ultrasound,” arXiv preprint arXiv:1810.00322, 2018.
+
+Leandra L Brickson, Dongwoon Hyun, and Jeremy J Dahl, “Reverberation noise suppression in the aperture domain using 3d fully
+convolutional neural networks,” in 2018 IEEE International Ultrasonics
+Symposium (IUS). IEEE, 2018, pp. 1–4.
+
+Sanketh Vedula, Ortal Senouf, Alex M Bronstein, Oleg V Michailovich,
+and Michael Zibulevsky, “Towards ct-quality ultrasound imaging using
+deep learning,” arXiv preprint arXiv:1710.06304, 2017.
+
+Yeo Hun Yoon, Shujaat Khan, Jaeyoung Huh, and Jong Chul Ye, “Deep
+learning in rf sub-sampled b-mode ultrasound imaging,” arXiv preprint
+arXiv:1712.06096, 2017.
+
+Walter Simson, Magdalini Paschali, Nassir Navab, and Guillaume
+Zahnd, “Deep learning beamforming for sub-sampled ultrasound data,”
+in 2018 IEEE International Ultrasonics Symposium (IUS). IEEE, 2018,
+pp. 1–4.
