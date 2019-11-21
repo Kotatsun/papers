@@ -7,7 +7,7 @@ A Generative Adversarial Neural Network for Beamforming Ultrasound Images: Invit
 <br />
 
 ## どんなものか
-<img src="https://github.com/Kotatsun/papers/blob/image/GAN_paper_phantom_result.png" width="320">
+<img src="https://github.com/Kotatsun/papers/blob/image/GAN_paper_phantom_result.png" width="８20">
 - 従来の超音波画像再構成手法の代用としてDNNが機能することを主張している.
 
 - DNNは超音波RF信号からB-mode画像とCystのセグメンテーション画像を出力するよう学習された．
@@ -41,10 +41,10 @@ A Generative Adversarial Neural Network for Beamforming Ultrasound Images: Invit
 - ネットワーク構造:
   - ジェネレータ： U-net(backbone: VGG13+BatchNorm)でRF信号を入力とし，B-mode画像[出力1]とセグメンテーション画像[出力2]を出力する．  
               損失関数 = 出力1のL1誤差 + 出力2のDise係数 + ディスクリミネータのBinaryCrossEntropy×0.5．   
-              <img src="https://github.com/Kotatsun/papers/blob/image/GAN_paper_Generater.png" width="320">
+              <img src="https://github.com/Kotatsun/papers/blob/image/GAN_paper_Generater.png" width="620">
   - ディスクリミネータ： VGG13+BatchNormでRF信号，b-mode画像，セグメンテーション画像を入力とし，RealとFakeの２値分類を行う．  
-                   損失関数 = RealとFakeのBinaryCrossEntropy．
-                   <img src="https://github.com/Kotatsun/papers/blob/image/GAN_paper_Discriminater.png" width="320">
+                   損失関数 = RealとFakeのBinaryCrossEntropy．  
+                   <img src="https://github.com/Kotatsun/papers/blob/image/GAN_paper_Discriminater.png" width="620">
 
 - テストデータの評価:
   - B-mode画像のPSNR(Peak Signal-to-Noise Ratio)と，セグメンテーション画像のDise係数を評価．
