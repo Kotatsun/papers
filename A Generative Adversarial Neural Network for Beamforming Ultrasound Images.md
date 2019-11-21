@@ -37,7 +37,7 @@ A Generative Adversarial Neural Network for Beamforming Ultrasound Images: Invit
 
 - ネットワーク構造:
   - ジェネレータ： U-net(backbone: VGG13+BatchNorm)でRF信号を入力とし， B-mode画像[出力1]とセグメンテーション画像[出力2]を出力する．  
-              損失関数は出力1のL1誤差 + 出力2のDise係数 + ディスクリミネータのBinaryCrossEntropy×0.5．   
+              損失関数 = 出力1のL1誤差 + 出力2のDise係数 + ディスクリミネータのBinaryCrossEntropy×0.5．   
               
   - ディスクリミネータ： VGG13+BatchNormで２値分類を行う．  
                    損失関数はRealとFakeのBinaryCrossEntropy．
@@ -47,8 +47,9 @@ A Generative Adversarial Neural Network for Beamforming Ultrasound Images: Invit
 
 <br />
 
-## 技術や手法の肝は
-・
+## 技術や手法の肝
+- B-mode画像とセグメンテーション画像を出力するネットワークにおいて， encoder,decoder部分を共有(特徴量の共有)することが出力画像の画質向上に寄与しそう．
+  - つまり別々で画像を出力するネットワークを学習するより， ネットワークを共有して同時に出力する方が特徴量抽出に対する学習が上手く進む．
 
 
 <br />
