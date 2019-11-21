@@ -21,7 +21,7 @@ A Generative Adversarial Neural Network for Beamforming Ultrasound Images: Invit
 
 - ビームフォーミングのパラメータ抽出や，ノイズ除去，音速分布の推定[[1](https://ieeexplore.ieee.org/abstract/document/8772124)]にDNNを用いる先行研究とは異なる．
 
-- ビームフォーミングを施していない単一平面波によるRaw RF信号からend-to-endで情報抽出が行われる．
+- ビームフォーミングを施していないsingle plane waveによるRaw RF信号からend-to-endで情報抽出が行われる．
 
 
 <br />
@@ -39,27 +39,35 @@ A Generative Adversarial Neural Network for Beamforming Ultrasound Images: Invit
   - ジェネレータ： U-net(backbone: VGG13+BatchNorm)でRF信号を入力とし，B-mode画像[出力1]とセグメンテーション画像[出力2]を出力する．  
               損失関数 = 出力1のL1誤差 + 出力2のDise係数 + ディスクリミネータのBinaryCrossEntropy×0.5．   
               
-  - ディスクリミネータ： VGG13+BatchNormで２値分類を行う．  
+  - ディスクリミネータ： VGG13+BatchNormでRF信号，b-mode画像，セグメンテーション画像を入力とし，RealとFakeの２値分類を行う．  
                    損失関数 = RealとFakeのBinaryCrossEntropy．
 
 - テストデータの評価:
-  - B-mode画像のPSNR(Peak Signal-to-Noise Ratio)と，セグメンテーション画像のDise係数で行なった．
+  - B-mode画像のPSNR(Peak Signal-to-Noise Ratio)と，セグメンテーション画像のDise係数を評価．
 
 <br />
 
-## 技術や手法の肝
+## 技術や手法の肝(有用な知見)
 - B-mode画像とセグメンテーション画像を出力するネットワークにおいて，encoder,decoder部分を共有(特徴量の共有)することが出力画像の画質向上に寄与している．
-  - つまり別々で画像を出力するネットワークを学習するより， ネットワークを共有して同時に出力する方が特徴量抽出に対する学習が上手く進む．
+  - つまり別々で画像を出力するネットワークを学習するより，ネットワークを共有して同時に出力する方が特徴量抽出に対する学習が上手く進む．
+  
+- ディスクリミネータを用いた方が，つまりGANのフレームワークを用いた方が，とりわけセグメンテーションの結果が向上する．
+  - ただしディスクリミネータのLossのみをジェネレータの学習に用いると，学習は上手くいかない．
 
+- ディスクリミネータの学習において入力にRF信号を用いない場合，ジェネレータが毎回同じ画像を出力するモード破壊のような現象が生じた．
 
 <br />
 
-## 議論はある
-・
+## 議論はあるか
+- なんかRFから再構成画像へのend-to-endはできそうだよねという結論．
+
+- あとはどの程度複雑な構造をDNNは表現できるかとい問題だろうか．
 
 <br />
 
 ## 次に読むべき論文は
-・
+- 先行研究のところで紹介していた他のDNN論文とか．
+
+
 
 
