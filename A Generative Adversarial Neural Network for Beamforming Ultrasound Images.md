@@ -28,7 +28,8 @@ A Generative Adversarial Neural Network for Beamforming Ultrasound Images: Invit
 
 ## 手法
 - Data Set:
-<img src="https://github.com/Kotatsun/papers/blob/image/GAN_paper_simulation_pattern.png" width="320">
+  <img src="https://github.com/Kotatsun/papers/blob/image/GAN_paper_simulation_pattern.png" width="320">
+  
   - Field IIで 50,000パターンのシミュレーションを行ない，40,000件をトレーニングデータ，10,000件をバリデーションデータとし，GANのネットワークを学習．
 
   - テストデータ1: トレーニングデータのConditionの中からランダムに選択し，100パターンのシミュレーションからを作成．  
