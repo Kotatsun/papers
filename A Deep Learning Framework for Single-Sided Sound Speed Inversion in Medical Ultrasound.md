@@ -32,7 +32,7 @@ A Deep Learning Framework for Single-Sided Sound Speed Inversion in Medical Ultr
 		- バリデーションデータは使ってなさそう．validation Lossがbestのものを採用するとかの発想ではなく，200epoch固定で回したらしい．
 	- ランダムスペックルを密度のdomainで加算した．  
 	- single plane waveとthree plane waveの2種類で結果を比較してみた．
-	<img src="https://github.com/Kotatsun/papers/blob/image/plane_wave.png" width="320"> <img src="https://github.com/Kotatsun/papers/blob/image/medium_condition.png" width="320">  
+	<img src="https://github.com/Kotatsun/papers/blob/image/plane_wave.png" width="420"> <img src="https://github.com/Kotatsun/papers/blob/image/medium_condition.png" width="320">  
 
 
 - Test in Real data:
