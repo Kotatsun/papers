@@ -7,7 +7,7 @@ A Deep Learning Framework for Single-Sided Sound Speed Inversion in Medical Ultr
 <br />
 
 ## どんなものか
-<img src="https://github.com/Kotatsun/papers/blob/image/ground_result.png" width="４20">
+<img src="https://github.com/Kotatsun/papers/blob/image/ground_result.png" width="220">
 
 - RF信号からFCNNによって媒質の音速分布を推定するDNNアーキテクチャを構築した．
 
@@ -26,7 +26,7 @@ A Deep Learning Framework for Single-Sided Sound Speed Inversion in Medical Ultr
 
 ## 手法
 - Simulation:
-<img src="https://github.com/Kotatsun/papers/blob/image/medium_condition.png" width="420">
+<img src="https://github.com/Kotatsun/papers/blob/image/medium_condition.png" width="320">
 	- リニアプローブを模した64素子で送信受信を行った．
 	-  k-waveで6826パターンのシミュレーションを行い，6026パターンをTraining dataとし，800パターンをテストデータとした．
 		- バリデーションデータは使ってなさそう．validation Lossがbestのものを採用するとかの発想ではなく，200epoch固定で回したらしい．
@@ -36,7 +36,7 @@ A Deep Learning Framework for Single-Sided Sound Speed Inversion in Medical Ultr
 
 
 - Test in Real data:
-<img src="https://github.com/Kotatsun/papers/blob/image/ground_result.png" width="320">
+<img src="https://github.com/Kotatsun/papers/blob/image/Real_leg.png" width="320">
 <br />
 
 ## 技術や手法の肝は
