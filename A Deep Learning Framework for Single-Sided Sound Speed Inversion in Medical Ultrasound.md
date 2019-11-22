@@ -58,4 +58,3 @@ A Deep Learning Framework for Single-Sided Sound Speed Inversion in Medical Ultr
 
 [[57]](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8363780) F. Tom and D. Sheet, “Simulating patho-realistic ultrasound images using deep generative networks with adversarial learning,” in Biomedical Imaging (ISBI 2018), 2018 IEEE 15th International Symposium on. IEEE, 2018, pp. 1174–1177.
 
-
