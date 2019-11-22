@@ -35,7 +35,7 @@ A Deep Learning Framework for Single-Sided Sound Speed Inversion in Medical Ultr
 	<img src="https://github.com/Kotatsun/papers/blob/image/plane_wave.png" width="420"> <img src="https://github.com/Kotatsun/papers/blob/image/medium_condition.png" width="320">  
 
 - ネットワーク構造:  
-	 Network for single plane wave:					Network for three plane wave:  
+	 ・Network for single plane wave:		　　　　　・Network for three plane wave:  
 	<img src="https://github.com/Kotatsun/papers/blob/image/single_network.png" width="220"> <img src="https://github.com/Kotatsun/papers/blob/image/middle_network.png" width="220">
 
 - Test in Real data:
