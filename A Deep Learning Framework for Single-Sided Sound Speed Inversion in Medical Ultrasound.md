@@ -7,7 +7,7 @@ A Deep Learning Framework for Single-Sided Sound Speed Inversion in Medical Ultr
 <br />
 
 ## どんなものか
-<img src="https://github.com/Kotatsun/papers/blob/image/ground_result.png" width="820">
+<img src="https://github.com/Kotatsun/papers/blob/image/ground_result.png" width="４20">
 
 - RF信号からFCNNによって媒質の音速分布を推定するDNNアーキテクチャを構築した．
 
@@ -32,10 +32,11 @@ A Deep Learning Framework for Single-Sided Sound Speed Inversion in Medical Ultr
 		- バリデーションデータは使ってなさそう．validation Lossがbestのものを採用するとかの発想ではなく，200epoch固定で回したらしい．
 	- ランダムスペックルを密度のdomainで加算した．  
 	- single plane waveとthree plane waveの2種類で結果を比較してみた．
-	<img src="https://github.com/Kotatsun/papers/blob/image/plane_wave.png" width="420">
+	<img src="https://github.com/Kotatsun/papers/blob/image/plane_wave.png" width="320">
+
 
 - Test in Real data:
-<img src="https://github.com/Kotatsun/papers/blob/image/ground_result.png" width="520">
+<img src="https://github.com/Kotatsun/papers/blob/image/ground_result.png" width="320">
 <br />
 
 ## 技術や手法の肝は
@@ -53,3 +54,4 @@ A Deep Learning Framework for Single-Sided Sound Speed Inversion in Medical Ultr
 - GANを初めて超音波に使った論文とか．音響媒質からB-mode Likeな画像を出力するものらしい．
 
 [[57]](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8363780) F. Tom and D. Sheet, “Simulating patho-realistic ultrasound images using deep generative networks with adversarial learning,” in Biomedical Imaging (ISBI 2018), 2018 IEEE 15th International Symposium on. IEEE, 2018, pp. 1174–1177.
+
