@@ -35,13 +35,13 @@ A Deep Learning Framework for Single-Sided Sound Speed Inversion in Medical Ultr
 	- single plane waveのみのものと，three plane waveを用いて画像再構成を行ったものの結果を比較してみた．
 
 - ネットワーク構造:  
-	- 異なる方向からの信号を複数入力とした場合に結果が向上するかを確認した．
+	- 異なる方向からの信号を複数入力とした場合に結果が向上するかを確認した．  
 ・Network for single plane wave: ・Network for three plane wave:  
-	<img src="https://github.com/Kotatsun/papers/blob/image/single_network.png" width="130">   <img src="https://github.com/Kotatsun/papers/blob/image/middle_network.png" width="130">
+	<img src="https://github.com/Kotatsun/papers/blob/image/single_network.png" width="110">   <img src="https://github.com/Kotatsun/papers/blob/image/middle_network.png" width="110">
 	
 
 - Test in Real data:
-	- Cephasonics 128ch リニアプローブ(5MHz)を用いて，1)ポリウレタンphantom，2)首の結合部，3)ふくらはぎ のRF dataを取得し，テストを行った．
+	- Cephasonics 128ch リニアプローブ(5MHz)を用いて，1)ポリウレタンphantom，2)首の結合部，3)ふくらはぎ のRF dataを取得し，テストを行った．  
 <img src="https://github.com/Kotatsun/papers/blob/image/neck.png" width="150"> <img src="https://github.com/Kotatsun/papers/blob/image/leg.png" width="150">
 	
 
