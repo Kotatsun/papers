@@ -27,6 +27,7 @@ A Deep Learning Framework for Single-Sided Sound Speed Inversion in Medical Ultr
 
 ## 手法・結果
 - Simulation:
+
 <img src="https://github.com/Kotatsun/papers/blob/image/plane_wave.png" width="420"> <img src="https://github.com/Kotatsun/papers/blob/image/medium_condition.png" width="320">  
 	- リニアプローブを模した64素子で送信受信を行った．
 	-  k-waveで6826パターンのシミュレーションを行い，6026パターンをTraining dataとし，800パターンをテストデータとした．
@@ -36,12 +37,12 @@ A Deep Learning Framework for Single-Sided Sound Speed Inversion in Medical Ultr
 
 - ネットワーク構造:  
 ・Network for single plane wave: ・Network for three plane wave:  
-	<img src="https://github.com/Kotatsun/papers/blob/image/single_network.png" width="170">   <img src="https://github.com/Kotatsun/papers/blob/image/middle_network.png" width="170">
+	<img src="https://github.com/Kotatsun/papers/blob/image/single_network.png" width="130">   <img src="https://github.com/Kotatsun/papers/blob/image/middle_network.png" width="130">
 	- 異なる方向からの信号を複数入力とした場合に結果が向上するかを確認した．
 
 - Test in Real data:
 
-<img src="https://github.com/Kotatsun/papers/blob/image/neck.png" width="170"> <img src="https://github.com/Kotatsun/papers/blob/image/leg.png" width="170">
+<img src="https://github.com/Kotatsun/papers/blob/image/neck.png" width="150"> <img src="https://github.com/Kotatsun/papers/blob/image/leg.png" width="150">
 	
 Cephasonics 128ch リニアプローブ(5MHz)を用いて，1)ポリウレタンphantom，2)首の結合部，3)ふくらはぎ のRF dataを取得し，テストを行った．
 <br />
@@ -50,7 +51,7 @@ Cephasonics 128ch リニアプローブ(5MHz)を用いて，1)ポリウレタン
 - 3方向からのplane waveによるRF信号を元に画像再構成を行うネットワークの検討を行なっており，異なる方向からの複数信号を統合して情報抽出を行う際の参考になりそう．
 - 下の画像だとmiddleとendはほぼ等程度の性能を示した．startでも再構成ができないわけではない．
 - 単純に特徴量抽出部分のパラメータ数の問題のような気もする．
-<img src="https://github.com/Kotatsun/papers/blob/image/network_study.png" width="220">
+<img src="https://github.com/Kotatsun/papers/blob/image/network_study.png" width="320">
 <br />
 
 ## 議論はある
