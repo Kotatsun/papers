@@ -8,6 +8,7 @@ A Generative Adversarial Neural Network for Beamforming Ultrasound Images: Invit
 
 ## どんなものか
 <img src="https://github.com/Kotatsun/papers/blob/image/GAN_paper_phantom_result.png" width="８20">
+
 - 従来の超音波画像再構成手法の代用としてDNNが機能することを主張している.
 
 - DNNは超音波RF信号からB-mode画像とCystのセグメンテーション画像を出力するよう学習された．
